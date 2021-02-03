@@ -2,7 +2,7 @@ const { EntitySchema } = require('typeorm');
 const User = require('../../app/Models/User');
 
 module.exports = new EntitySchema({
-  name: 'Post',
+  name: 'User',
   target: User,
   tableName: 'users',
   columns: {
@@ -20,5 +20,11 @@ module.exports = new EntitySchema({
     password: {
       type: 'varchar',
     },
+    create_at: {
+      createDate: true,
+    },
+    update_at: {
+      createDate: true,
+    }
   },
 });
