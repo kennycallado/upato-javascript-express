@@ -1,0 +1,29 @@
+{
+  "name": "express-v0.2",
+  "version": "0.2.0",
+  "description": "Api rest con express y typeorm",
+  "main": "start/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "node",
+    "express",
+    "typeorm"
+  ],
+  "author": "Kenny Callado",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.30"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "sqlite3": "^5.0.0"
+  }
+}
