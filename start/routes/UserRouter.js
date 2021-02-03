@@ -1,9 +1,8 @@
 const { Router } = require('express');
-
 const router = new Router();
 
-router.get('/', (req, res) => {
-  return res.json({ message: 'hola' });
-});
+const UserController = require('../../app/Controllers/UserController');
+
+router.get('/', UserController.index);
 
 module.exports = router;
