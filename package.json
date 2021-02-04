@@ -4,7 +4,9 @@
   "description": "Api rest con express y typeorm",
   "main": "start/index.js",
   "scripts": {
-    "dev": "nodemon -r ./config/dotenv start/index.js"
+    "dev": "nodemon -r ./config/dotenv start/index.js",
+    "seed:config": "node ./node_modules/typeorm-seeding/dist/cli.js config",
+    "seed:run": "node ./node_modules/typeorm-seeding/dist/cli.js seed"
   },
   "keywords": [
     "api",
@@ -18,7 +20,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.30"
+    "typeorm": "^0.2.30",
+    "typeorm-seeding": "^1.6.1"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
