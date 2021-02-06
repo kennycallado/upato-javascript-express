@@ -36,8 +36,7 @@ class UserController {
       if (email) user.email = email;
       if (password) user.password = password;
 
-      // esto crea uno nuevo no lo actualiza.
-      const userUpdated = await getRepository('User').save(user);
+      const userUpdated = await getRepository('User').manager.save(user);
 
       return res.json(userUpdated);
     }
