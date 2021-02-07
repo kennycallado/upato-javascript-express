@@ -27,7 +27,7 @@ Content-Type: application/json
 ### DELETE /users/:id
 DELETE http://localhost:3333/users/3
 
-############################# POSTS 
+############################# POSTS ###########################
 
 ### GET /posts/
 GET http://localhost:3333/posts
@@ -58,7 +58,7 @@ DELETE http://localhost:3333/posts/3
 ### GET /posts/:id/sendstart
 GET http://localhost:3333/posts/1/sendstart
 
-############################# COMMENTS
+############################# COMMENTS ################################
 
 ### GET /comments
 GET http://localhost:3333/comments
