@@ -26,3 +26,60 @@ Content-Type: application/json
 
 ### DELETE /users/:id
 DELETE http://localhost:3333/users/3
+
+############################# POSTS 
+
+### GET /posts/
+GET http://localhost:3333/posts
+
+### GET /posts/1
+GET http://localhost:3333/posts/1
+
+### post /posts/
+POST http://localhost:3333/posts
+Content-Type: application/json
+
+{
+  "title": "título 1",
+  "content": "Contenido post 1."
+}
+
+### PUT /posts/:id
+PUT http://localhost:3333/posts/2
+Content-Type: application/json
+
+{
+  "content": "Modifico el content"
+}
+
+### DELETE /posts/:id
+DELETE http://localhost:3333/posts/3
+
+### GET /posts/:id/sendstart
+GET http://localhost:3333/posts/1/sendstart
+
+############################# COMMENTS
+
+### GET /comments
+GET http://localhost:3333/comments
+
+### GET /comments/:id
+GET http://localhost:3333/comments/1
+
+### POST /comments
+POST http://localhost:3333/comments
+Content-Type: application/json
+
+{
+  "content":  "Contenido del comentario - 1"
+}
+### PUT /comments/:id
+PUT http://localhost:3333/comments/2
+Content-Type: application/json
+
+{
+  "content": "Contenido actualizado"
+}
+
+### GET /comments/:id/sendlike
+GET http://localhost:3333/comments/1/sendlike
